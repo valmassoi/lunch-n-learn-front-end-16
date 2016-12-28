@@ -2,7 +2,7 @@
 The goal of this lunch and learn is to highlight the newest Front End development tools, libraries, and frameworks. I have included a starter `react` Single Page App.
 
 ## ES6
-`ECMAscript 6` also called `ES2015` brings some syntactic sugar to JavaScript. Most of the features are supported in modern browsers, but it's not best practice to use directly on the client yet. Using `Webpack` ES6 JavaScript can be compiled down to ES5 to support more browsers. `Node.js` v6.2+??? supports ES6 directly.
+`ECMAscript 6` also called `ES2015` brings some syntactic sugar to JavaScript. Most of the features are supported in modern browsers, but it's not best practice to use directly on the client yet. Using `Webpack` ES6 JavaScript can be compiled down to ES5 to support more browsers. Newer versions of `Node.js` support [most of](http://node.green/) ES6 directly.
 
 #### Const and Let
 `const` denotes that the variable will not be changing (immutable)  
@@ -13,6 +13,7 @@ I've found it is best to default all variables to `const` and use `let` when nee
 
 #### Template Strings
 ```JavaScript
+var adjective = 'radical'
 //ES6  
 const myString = `Template strings are ${adjective}!`
 //Old
@@ -61,7 +62,7 @@ Great overview of the best features of ES6: [Part 1](https://www.youtube.com/wat
 
 ## ESLint
 A `linter` plugs into your text editor (I use Atom but I believe Sublime has a plugin), highlighting lines that don't meet the set standards. Can also be run in terminal. If, as well as warning you when you are using a variable that hasn't been defined or even when you define one that never gets used. Linters are beneficial to bring code consistency and clarity to projects.  
-I use AirBnB's style guide (code style - not to be confused with UI design) with some tweaks  
+I use [AirBnB's style guide](https://github.com/airbnb/javascript) (code style - not to be confused with UI design) with some tweaks  
 Install globally  
 .ESLint file  
 
@@ -82,7 +83,7 @@ To make requests: `axios` is a nice light weight library
 finding min/max, string, array, object, filtering array of objects
 ## DEMO
 ```bash
-git clone && cd
+git clone git@github.com:valmassoi/lunch-n-learn-front-end-16.git && cd
 npm i #installs packages included in dependencies and devDependencies objects in package.json
 npm run dev #serves up the app on localhost:8088 with live reload
 npm install --save some-package
@@ -115,7 +116,7 @@ export Default ComponentName
 
 #### Props
 ```HTML
-<SomeComponent customProp="green" title={this.state.title} />
+<ComponentName customProp="green" title={this.state.title} />
 ```
 
 #### State

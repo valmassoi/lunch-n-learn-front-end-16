@@ -1,0 +1,161 @@
+$main-color: rgb(50, 52, 54)
+$accent-color: #43AA48
+$light-grey: #F7FAFD
+
+html
+  height: 100%
+  box-sizing: border-box
+  background: url(../images/SLC.jpeg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+
+html *
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+h1
+  font-weight: 600
+
+h4
+  font-size: 18px
+  font-weight: 600
+  color: #202020
+
+p
+  font-size: 16px
+  color: #777879
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+body
+  // background-color: $light-grey
+  background-color: rgba(70, 130, 180, 0.3)
+  position: relative
+  padding-bottom: 6rem
+  margin: 0
+  min-height: 100%
+
+a
+  color: $main-color !important
+
+a:-webkit-any-link
+  text-decoration: none
+
+.kid-page
+  padding: 0px 50px
+
+.centered
+  margin: 0px auto
+
+.centered-both
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.center-text
+  text-align: center
+
+.navbar-default
+  background-color: #F7FAFD
+  .navbar-nav>li>a, .navbar-nav>li>a:hover
+    border-top: 3px solid transparent
+    font-weight: 500
+    &:hover
+      border-top: 3px solid $main-color
+
+.hidden
+  display: none !important
+
+.btn-white
+  background-color: rgb(255, 255, 255)
+  border-radius: 22px
+  color: rgb(50, 52, 54)
+  cursor: pointer
+  display: inline-block
+  font-size: 14px
+  font-style: normal
+  font-weight: 600
+  height: 45px
+  line-height: 20px
+  margin-bottom: 12px
+  margin-left: 6px
+  margin-right: 6px
+  margin-top: 0px
+  min-width: 180px
+  padding-bottom: 10px
+  padding-left: 39px
+  padding-right: 39px
+  padding-top: 11px
+  text-align: center
+  vertical-align: top
+  width: 210.75px
+  transition: background .5s, border .5s
+  &:hover, &:active, &:focus
+    color: rgb(50, 52, 54)
+    border-color: #d2d2d2
+    background-color: #d2d2d2
+
+.btn#free-trial
+  color: $main-color
+  padding-top: 12px
+  padding-bottom: 12px
+  background-color: white
+  border: 2px solid $main-color
+  border-radius: 0
+  font-weight: 500
+  margin-bottom: 25px
+  width: 100%
+  &:hover
+    background-color: $light-grey
+
+.card-header
+  color: white
+  font-size: 24px
+  background-color: #0b76cc
+  text-align: center
+  margin: -21px -20px 15px -20px
+  padding: 10px
+
+//Form component
+.form-container
+  background-color: white
+  padding: 20px
+  width: 600px
+  margin-top: 50px
+  box-shadow: 0 3px 50px rgba(0, 0, 60, 0.1), 0 3px 25px rgba(0, 0, 60, 0.3)
+  border-radius: 5px
+  text-align: center
+  overflow: hidden
+
+.form-container-section
+  padding: 20 3rem
+
+.form-container-section:nth-child(even)
+  background-color: #f7f7f9
+
+/*SHAKE ANIMATION ON BAD LOGIN*/
+.bad
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both
+  transform: translate3d(0, 0, 0)
+  backface-visibility: hidden
+  perspective: 1000px
+
+
+@keyframes shake
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+
+  40%, 60%
+    transform: translate3d(4px, 0, 0)
