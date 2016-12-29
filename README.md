@@ -57,6 +57,11 @@ Used throughout react
 
 
 #### More
+```JavaScript
+Math.hypot(3, 4) // 5
+"abcde".includes("cd") // true
+"abc".repeat(3) // "abcabcabc"
+```
 generator functions, promises (eliminates callback hell), import/exporting (shown below)  
 Great overview of the best features of ES6: [Part 1](https://www.youtube.com/watch?v=AfWYO8t7ed4) - [Part 2](https://www.youtube.com/watch?v=LmL0Gh193M0)  
 

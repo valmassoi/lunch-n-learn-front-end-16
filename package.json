@@ -37,6 +37,7 @@
     "react": "^0.14.8",
     "react-bootstrap": "^0.30.5",
     "react-dom": "^0.14.8",
+    "react-marked-markdown": "^1.4.2",
     "react-router": "^2.4.1",
     "webpack": "^1.13.2"
   },

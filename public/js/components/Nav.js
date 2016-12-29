@@ -29,7 +29,7 @@ export default class Nav extends Component {
     return [
       <li key={1}><Link to="/404" onClick={this.setCollapsed.bind(this)}>Tab1</Link></li>,
       <li key={2}><Link to="/404" onClick={this.setCollapsed.bind(this)}>Tab2</Link></li>,
-      <li key={3}><Link to="/404" onClick={this.setCollapsed.bind(this)}>Tab3</Link></li>,
+      <li key={3}><Link to="/readme" onClick={this.setCollapsed.bind(this)}>README</Link></li>,
     ]
   }
 
