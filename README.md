@@ -6,8 +6,7 @@ The goal of this lunch and learn is to highlight the newest Front End developmen
 
 #### Const and Let
 `const` denotes that the variable will not be changing (immutable)  
-`let` is the new `var`
-the scoping is different  
+`let` is the new `var` but the scoping is [different](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)  
 
 I've found it is best to default all variables to `const` and use `let` when needed (like for an `error message` variable that will change based on a if/else block)  
 
@@ -66,10 +65,12 @@ generator functions, promises (eliminates callback hell), import/exporting (show
 Great overview of the best features of ES6: [Part 1](https://www.youtube.com/watch?v=AfWYO8t7ed4) - [Part 2](https://www.youtube.com/watch?v=LmL0Gh193M0)  
 
 ## ESLint
-A `linter` plugs into your text editor (I use Atom but I believe Sublime has a plugin), highlighting lines that don't meet the set standards. Can also be run in terminal. If, as well as warning you when you are using a variable that hasn't been defined or even when you define one that never gets used. Linters are beneficial to bring code consistency and clarity to projects.  
+A `linter` plugs into your text editor (I use Atom but I believe Sublime has a plugin), highlighting lines that don't meet the set standards. Can also be run in terminal. It looks for best practices that you define, like using `;` or not. It also can warn you when you are using a variable that hasn't been defined or if define one that never gets used. Linters are beneficial to bring code consistency, clarity to projects, and find bugs sooner.  
 I use [AirBnB's style guide](https://github.com/airbnb/javascript) (code style - not to be confused with UI design) with some tweaks  
-Install globally  
-.ESLint file  
+Install globally: `npm install -g eslint`  
+Starter conf: [.eslintrc.js](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/.eslintrc.js)  
+See plugins located in [package.json](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/package.json) devDependencies
+Command line can auto fix some errors  
 
 ## Webpack
 Bundle, Minify, and Uglify  
