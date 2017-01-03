@@ -53,7 +53,7 @@ Used throughout react
 ```JavaScript
 //TODO
 ```
-
+[examples](https://www.sitepoint.com/object-oriented-javascript-deep-dive-es6-classes/)
 
 #### More
 ```JavaScript
@@ -69,13 +69,13 @@ A `linter` plugs into your text editor (I use Atom but I believe Sublime has a p
 I use [AirBnB's style guide](https://github.com/airbnb/javascript) (code style - not to be confused with UI design) with some tweaks  
 Install globally: `npm install -g eslint`  
 Starter conf: [.eslintrc.js](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/.eslintrc.js)  
-See plugins located in [package.json](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/package.json) devDependencies
-Command line can auto fix some errors  
+See plugins located in [package.json](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/package.json) devDependencies  
+CL command can auto fix some errors  
 
 ## Webpack
 Bundle, Minify, and Uglify  
-Plugins:  
-Live-Reload:  
+Plugins: ..  
+Live-Reload: webpack-dev-server  
 You can even go to {{ip_address}}:{{port}} on your phone and it live reloads too. I have found live reload to be very beneficial to find bugs as they are written. If you like this, you can have the `Node.js` backend live reload too using `nodemon`  
 Different settings for dev and prod
 
@@ -93,8 +93,8 @@ finding min/max, string, array, object, filtering array of objects
 git clone git@github.com:valmassoi/lunch-n-learn-front-end-16.git && cd lunch-n-learn-front-end-16
 npm i #installs packages included in dependencies and devDependencies objects in package.json
 npm run dev #serves up the app on localhost:8088 with live reload
-npm install --save some-package
-npm install --save-dev some-dev-package
+npm install --save some-package #example to add a package
+npm install --save-dev some-dev-package #example to add a dev package
 ```
 
 ## React.js
@@ -148,8 +148,12 @@ render{
   return(
     <div>
       <ul>
-        {this.users.forEach(user => {
-          <li class="user-list" key={user.id} onClick={(user) => this.setActiveUser()}>user.name</li>
+        {this.users.map(user => {
+          return (
+            <li class="user-list" key={user.id} onClick={(user) => this.setActiveUser()}>
+              user.name
+            </li>
+          )
         })}
       </ul>
     </div>
@@ -167,11 +171,13 @@ setState({ cryptoCurrencies, title: newTitle }) //same key doesn't need :
 ```
 
 #### Component Lifecycle
-ComponentDidMount
+`componentDidMount`, `componentWillUnmount`, ...  
+[doc](https://facebook.github.io/react/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class)
 
 #### React Router  
-Sets up the navigation for the Single Page App.
-Can take params. I configure it not to have a `#``
+Sets up the navigation for the Single Page App.  
+Can take params. I configure it not to have a `#`  
+
 #### Flux or Redux  
 React by itself is considered the `V` in `MVC` (Model View Controller)  
 Flux or Redux fill in to handle data flow.  
@@ -181,7 +187,7 @@ It gives you global actions and a global state. One component can initiate an ac
 The Demo in this repo doesn't go into `Redux`
 
 #### Prop types
-Check the type of a property passed in. Not requrired to do.
+Check the type of a property passed in. Not required to do.
 ```JavaScript
 ComponentName.propTypes = {
   someProp: PropTypes.object.isRequired,
@@ -189,16 +195,15 @@ ComponentName.propTypes = {
 ```
 
 #### Unit testing
+[mocha](https://mochajs.org/) with [chai](http://chaijs.com/)
 
 #### Resources
-[React basics playlist](https://www.youtube.com/watch?v=MhkGQAoc7bc&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b) (part 1 - 7 will give you a quick intro)
-Redux Udemy (includes full authentication using Node.js and JWTs)
+[Official Docs](https://facebook.github.io/react/)  
+[React basics playlist](https://www.youtube.com/watch?v=MhkGQAoc7bc&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b) (part 1 - 7 will give you a quick intro)  
+[Redux Udemy](https://www.udemy.com/react-redux-tutorial) (includes full authentication loop using Node.js and JWTs)  
 
 #### Alternatives
-`React` is maintained by Facebook, `Angular` by Google. The general community consensus is if staring a new project go with `React`, but might not be worth refactoring `Angular` to `React`. I've used `Angular 2` and prefer `React`. `Metor` and `Vue` are other options.
+`React` is maintained by Facebook, `Angular` by Google. The general community consensus is if staring a new project go with `React`, but might not be worth refactoring `Angular` to `React`. I've used `Angular 2` and prefer `React`. `Meteor` and `Vue` are other popular frameworks.
 
 #### React-Native
-Compiles native iOS and Android applications from JavaScript. This allows for code reuse from React web apps. It is young but is being used in production applications on app stores.  
-
-## Conclusion
-The front end landscape has been...
+Compiles to native iOS and Android applications from JavaScript. This allows for code reuse from React web apps. It is young but is being used in production applications on app stores.  
