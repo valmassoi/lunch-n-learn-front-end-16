@@ -75,9 +75,9 @@ CL command can auto fix some errors
 ## Webpack
 Bundle, Minify, and Uglify  
 Plugins: ..  
-Live-Reload: webpack-dev-server  
+Live-Reload: `webpack-dev-server`  
 You can even go to {{ip_address}}:{{port}} on your phone and it live reloads too. I have found live reload to be very beneficial to find bugs as they are written. If you like this, you can have the `Node.js` backend live reload too using `nodemon`  
-Different settings for dev and prod
+Different settings based on `env`.
 
 ## NPM or Yarn
 
@@ -85,8 +85,8 @@ Yarn is new and works similar to NPM but it caches packages across all your loca
 
 ## No more jQuery!
 With `react` you no longer need `jQuery` to manipulate the DOM but you lose `ajax` requests and its other useful library methods.  
-To make requests: `axios` is a nice light weight library  
-`lodash` or `underscore` supplement ES6 methods:  
+To make requests: [axios](https://github.com/mzabriskie/axios) is a nice light weight library  
+[lodash](https://lodash.com/docs/4.17.4) or `underscore` supplement ES6 methods:  
 finding min/max, string, array, object, filtering array of objects
 ## DEMO
 ```bash
