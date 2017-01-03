@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 
+import Counter from '../components/Counter'
+import SomeComponent from '../components/SomeComponent'
 
 class Home extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      // stepNumber: 1,
+
     }
   }
 
@@ -16,8 +18,9 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-
+      <div class="form-container centered">
+        <SomeComponent title="Hello World" />
+        <Counter />
       </div>
     )
   }

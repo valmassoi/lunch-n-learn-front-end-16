@@ -40,6 +40,12 @@ a {
 a:-webkit-any-link {
   text-decoration: none; }
 
+.green {
+  background-color: #43AA48; }
+
+.red {
+  background-color: #f44336; }
+
 .kid-page {
   padding: 0px 50px; }
 

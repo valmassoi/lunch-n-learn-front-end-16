@@ -77,6 +77,7 @@ Bundle, Minify, and Uglify
 Plugins:  
 Live-Reload:  
 You can even go to {{ip_address}}:{{port}} on your phone and it live reloads too. I have found live reload to be very beneficial to find bugs as they are written. If you like this, you can have the `Node.js` backend live reload too using `nodemon`  
+Different settings for dev and prod
 
 ## NPM or Yarn
 
