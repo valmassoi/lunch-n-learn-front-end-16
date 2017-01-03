@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import Bitcoin from '../components/Bitcoin'
 import Counter from '../components/Counter'
 import SomeComponent from '../components/SomeComponent'
 
@@ -20,7 +21,8 @@ class Home extends Component {
     return (
       <div class="form-container centered">
         <SomeComponent title="Hello World" />
-        <Counter />
+        {/* <Counter /> */}
+        {/* <Bitcoin /> */}
       </div>
     )
   }
