@@ -68,16 +68,17 @@ Great overview of the best features of ES6: [Part 1](https://www.youtube.com/wat
 A `linter` plugs into your text editor (I use Atom but I believe Sublime has a plugin), highlighting lines that don't meet the set standards. Can also be run in terminal. It looks for best practices that you define, like using `;` or not. It also can warn you when you are using a variable that hasn't been defined or if define one that never gets used. Linters are beneficial to bring code consistency, clarity to projects, and find bugs sooner.  
 I use [AirBnB's style guide](https://github.com/airbnb/javascript) (code style - not to be confused with UI design) with some tweaks  
 Install globally: `npm install -g eslint`  
+Atom packages: [linter](https://atom.io/packages/linter) and [linter-eslint](https://atom.io/packages/linter-eslint)
 Starter conf: [.eslintrc.js](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/.eslintrc.js)  
 See plugins located in [package.json](https://github.com/valmassoi/lunch-n-learn-front-end-16/blob/master/package.json) devDependencies  
-CL command can auto fix some errors  
+CL command can auto fix some errors: `eslint ./public/js --fix`  
 
 ## Webpack
 Bundle, Minify, and Uglify  
 Plugins: ..  
 Live-Reload: `webpack-dev-server`  
 You can even go to {{ip_address}}:{{port}} on your phone and it live reloads too. I have found live reload to be very beneficial to find bugs as they are written. If you like this, you can have the `Node.js` backend live reload too using `nodemon`  
-Different settings based on `env`.
+Different settings based on `env` and [env vars](http://stackoverflow.com/a/38393027).
 
 ## NPM or Yarn
 
@@ -176,7 +177,7 @@ setState({ cryptoCurrencies, title: newTitle }) //same key doesn't need :
 
 #### React Router  
 Sets up the navigation for the Single Page App.  
-Can take params. I configure it not to have a `#`  
+Can take [params](https://github.com/valmassoi/voting-app/blob/master/public/js/routes.js#L24) or wrapped in [auth middleware](https://github.com/valmassoi/bookwerm/blob/master/src/routes.js#L20). I configure it not to have a `#`  
 
 #### Flux or Redux  
 React by itself is considered the `V` in `MVC` (Model View Controller)  
