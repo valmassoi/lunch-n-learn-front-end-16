@@ -162,8 +162,36 @@ render{
   )
 }
 ```
-
 Note I used `class` in the `li` above. In `react` you can't do this by default because `class` is now a reserved word. You are to use `className` but if you look in the `webpack` file I have a plugin that will change this for me on bundle.
+
+Create Table Mapping an array of objects:
+```JavaScript
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Address</th>
+      <th>Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    {trades.map((trade, i) => {
+      const tradeType = this.getType(trade)
+      return (
+       <tr key={`tr-${i}`}>
+         <td key={`td-0-${i}`}>{this.utcToEastern(trade.SendingTime)}</td>
+         <td key={`td-1-${i}`}>{tradeType}</td>
+         <td key={`td-2-${i}`} class="address">trade.BlockchainPortfolioAddress</td>
+         <td key={`td-3-${i}`} class={trade.SecurityAmount >= 0 ? 'delta-green' : 'delta-red'}>
+           {trade.SecurityAmount >= 0 ? '+' : ''}{trade.SecurityAmount} {trade.Symbol}
+         </td>
+       </tr>
+      )}
+    )}
+  </tbody>
+</table>
+```
 
 Changing the state:  
 ```JavaScript
