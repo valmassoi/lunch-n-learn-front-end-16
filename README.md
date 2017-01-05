@@ -92,7 +92,7 @@ To make requests: [axios](https://github.com/mzabriskie/axios) is a nice light w
 finding min/max, string, array, object, filtering array of objects
 ## DEMO
 ```bash
-git clone git@github.com:valmassoi/lunch-n-learn-front-end-16.git && cd lunch-n-learn-front-end-16
+git clone https://github.com/valmassoi/lunch-n-learn-front-end-16.git && cd lunch-n-learn-front-end-16
 npm i #installs packages included in dependencies and devDependencies objects in package.json
 npm run dev #serves up the app on localhost:8088 with live reload
 npm install --save some-package #example to add a package
