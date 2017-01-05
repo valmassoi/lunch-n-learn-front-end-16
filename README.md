@@ -46,7 +46,7 @@ const anotherArray = [0, ...array, 4] //[0, 1, 2, 3, 4]
 It can be used with objects too, useful with `Redux` state.
 #### Defaults
 ```JavaScript
-function f(x=10, y) { } //if x isn't passed (or undefined), it defaults to 10
+function f(x, y=10) { } //if y isn't passed (or undefined), it defaults to 10
 ```
 #### Classes!
 Used throughout react
