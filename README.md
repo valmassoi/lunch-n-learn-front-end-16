@@ -150,7 +150,7 @@ render{
   return(
     <div>
       <ul>
-        {this.users.map(user => {
+        {users.map(user => {
           return (
             <li class="user-list" key={user.id} onClick={(user) => this.setActiveUser(user.id)}>
               user.name
