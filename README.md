@@ -164,7 +164,14 @@ render{
 ```
 Note I used `class` in the `li` above. In `react` you can't do this by default because `class` is now a reserved word. You are to use `className` but if you look in the `webpack` file I have a plugin that will change this for me on bundle.
 
-Create Table Mapping an array of objects:
+Changing the state:  
+```JavaScript
+const cryptoCurrencies = ['bitcoin', 'ethereum', 'dash'],
+      newTitle = 'Crypto'
+setState({ cryptoCurrencies, title: newTitle }) //same key doesn't need :
+```
+
+#### Create table mapping an array of objects
 ```JavaScript
 <table class="table">
   <thead>
@@ -191,13 +198,6 @@ Create Table Mapping an array of objects:
     )}
   </tbody>
 </table>
-```
-
-Changing the state:  
-```JavaScript
-const cryptoCurrencies = ['bitcoin', 'ethereum', 'dash'],
-      newTitle = 'Crypto'
-setState({ cryptoCurrencies, title: newTitle }) //same key doesn't need :
 ```
 
 #### Component Lifecycle
