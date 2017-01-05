@@ -152,7 +152,7 @@ render{
       <ul>
         {this.users.map(user => {
           return (
-            <li class="user-list" key={user.id} onClick={(user) => this.setActiveUser()}>
+            <li class="user-list" key={user.id} onClick={(user) => this.setActiveUser(user.id)}>
               user.name
             </li>
           )
