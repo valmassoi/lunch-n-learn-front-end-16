@@ -19,7 +19,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div class="form-container centered">
+      <div class="form-container centered home">
         <SomeComponent title="Hello World" />
         {/* <Counter /> */}
         {/* <Bitcoin /> */}

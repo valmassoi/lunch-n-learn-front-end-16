@@ -2,13 +2,9 @@ import { renderComponent, expect } from '../test_helper'
 import Home from '../../public/js/pages/Home'
 
 describe('Home', () => {
-  let component
 
-  beforeEach(() => {
-  })
-
-  it('exists', () => {
-    component = renderComponent(Home, { darkMode: 'dark-mode' })
-    expect(component).to.exist
+  it('has correct class', () => {
+    const component = renderComponent(Home, { })
+    expect(component).to.have.class('home')
   })
 })
