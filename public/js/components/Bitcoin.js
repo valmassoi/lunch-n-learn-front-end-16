@@ -9,7 +9,7 @@ class Bitcoin extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.getBtcData()
   }
 
