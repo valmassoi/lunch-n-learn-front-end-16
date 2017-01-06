@@ -224,8 +224,9 @@ ComponentName.propTypes = {
 }
 ```
 
-#### Unit testing
-[mocha](https://mochajs.org/) with [chai](http://chaijs.com/)
+#### Unit/spec testing
+[mocha](https://mochajs.org/) with [chai](http://chaijs.com/)  
+Run: `npm run test:watch` in demo
 
 #### Resources
 [Official Docs](https://facebook.github.io/react/)  
