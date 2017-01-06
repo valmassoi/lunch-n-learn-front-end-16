@@ -201,7 +201,7 @@ setState({ cryptoCurrencies, title: newTitle }) //same key doesn't need :
 ```
 
 #### Component Lifecycle
-`componentDidMount`, `componentWillUnmount`, ...  
+`componentDidMount` (call requests here), `componentWillUnmount`, ...  
 [doc](https://facebook.github.io/react/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class)
 
 #### React Router  
